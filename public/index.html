@@ -16,6 +16,31 @@
       <style>
         body {padding-top: 60px;}
       </style>
+      <script>
+        $(function() {
+            $("#WebToLeadForm").submit(function(event) {
+                event.preventDefault();
+
+                var errorMessage = $("#errorMessage");
+                var error = $("#error");
+                error.hide();
+
+                $("#message").hide();
+
+                var companyName = $("#company").val();
+                var firstName = $("#first_name").val();
+                var lastName = $("#last_name").val();
+                var email = $("#email").val();
+                var phone = $("#phone").val();
+                var product = $("#00N5j00000ERtXt").val();
+
+                if (company.length == 0 ||  first_name.length == 0 || last_name.length == 0 || email.length == 0 || phone.length == 0 || 00N5j00000ERtXt.length == 0) {
+                    errorMessage.text("All of the fields are required.");
+                    error.show();
+                }       
+            });
+        });
+    </script>
     </head>
   <body>
     <div>
@@ -73,6 +98,7 @@
                   <label for="Product_c">Product</label>
                   <input type="text" class="form-control" id="00N5j00000ERtXt" maxlength="255" name="00N5j00000ERtXt" size="20" type="text" />
                 </div>
+              </div>  
               <div class="panel-footer">
                 
                 <div class="g-recaptcha" data-sitekey="6LfAHMseAAAAAMdrkD84n_MX51Mmoz2pNtSmpuAK"></div>
