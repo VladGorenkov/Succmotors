@@ -27,20 +27,34 @@
 
                 $("#message").hide();
 
-                var companyName = $("#company").val();
-                var firstName = $("#first_name").val();
-                var lastName = $("#last_name").val();
+                var companyName = $("#companyName").val();
+                var firstName = $("#firstName").val();
+                var lastName = $("#lastName").val();
                 var email = $("#email").val();
                 var phone = $("#phone").val();
-                var product = $("#00N5j00000ERtXt").val();
+                var product = $("#product").val();
 
-                if (company.length == 0 ||  first_name.length == 0 || last_name.length == 0 || email.length == 0 || phone.length == 0 || 00N5j00000ERtXt.length == 0) {
+                if (companyName.length == 0 ||  firstName.length == 0 || lastName.length == 0 || email.length == 0 || phone.length == 0 || product.length == 0) {
                     errorMessage.text("All of the fields are required.");
                     error.show();
-                }       
-            });
-        });
-    </script>
+                }
+                else {
+                    
+                            $("#companyName").val("");
+                            $("#firstName").val("");
+                            $("#lastName").val("");
+                            $("#email").val("");
+                            $("#phone").val("");
+                            $("#product").val("");
+                            $("#messageMessage").text("Record updated!");
+                            $("#message").show();
+                        
+                            errorMessage.text(err.responseJSON.error);
+                            error.show();
+                        }
+                    });
+                  });               
+     </script>
     </head>
   <body>
     <div>
