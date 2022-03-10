@@ -116,7 +116,8 @@
             }
             else if(grecaptcha.getResponse().length == 0)
             {
-              errorMessage.text("Verify, that you are not a robot!");}
+              errorMessage.text("Verify, that you are not a robot!");
+              error.show();}
             else {
                         $("#company").val("");
                         $("#first_name").val("");
