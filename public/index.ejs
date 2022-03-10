@@ -16,42 +16,7 @@
       <style>
         body {padding-top: 60px;}
       </style>
-      <script>
-        function CallValidation() {
-                event.preventDefault();
-
-                var errorMessage = $("#errorMessage");
-                var error = $("#error");
-                error.hide();
-
-                $("#message").hide();
-
-                var companyName = $("#company").val();
-                var firstName = $("#first_name").val();
-                var lastName = $("#last_name").val();
-                var email = $("#email").val();
-                var phone = $("#phone").val();
-                var product = $("#00N5j00000ERtXt").val();
-
-                if (company.length == 0 ||  first_name.length == 0 || last_name.length == 0 || email.length == 0 || phone.length == 0 || 00N5j00000ERtXt.length == 0) {
-                    errorMessage.text("All of the fields are required.");
-                    error.show();
-                }
-                else {
-                            $("#company").val("");
-                            $("#first_name").val("");
-                            $("#last_name").val("");
-                            $("#email").val("");
-                            $("#phone").val("");
-                            $("#product").val("");
-                            $("#messageMessage").text("Record updated!");
-                            $("#message").show();
-                        
-                            error.hide();
-                        }
-                }                              
-     </script>
-    </head>
+      </head>
   <body>
     <div>
       <div>
@@ -128,4 +93,39 @@
         </div>
     </div>
   </body>
+  <script>
+    function CallValidation() {
+            event.preventDefault();
+
+            var errorMessage = $("#errorMessage");
+            var error = $("#error");
+            error.hide();
+
+            $("#message").hide();
+
+            var companyName = $("#company").val();
+            var firstName = $("#first_name").val();
+            var lastName = $("#last_name").val();
+            var email = $("#email").val();
+            var phone = $("#phone").val();
+            var product = $("#00N5j00000ERtXt").val();
+
+            if (company.length == 0 ||  first_name.length == 0 || last_name.length == 0 || email.length == 0 || phone.length == 0 || 00N5j00000ERtXt.length == 0) {
+                errorMessage.text("All of the fields are required.");
+                error.show();
+            }
+            else {
+                        $("#company").val("");
+                        $("#first_name").val("");
+                        $("#last_name").val("");
+                        $("#email").val("");
+                        $("#phone").val("");
+                        $("#product").val("");
+                        $("#messageMessage").text("Record updated!");
+                        $("#message").show();
+                    
+                        error.hide();
+                    }
+            }                              
+ </script>
 </html>
