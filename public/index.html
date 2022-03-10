@@ -16,32 +16,7 @@
       <style>
         body {padding-top: 60px;}
       </style>
-      <script>
-        $(function() {
-            $("#WebToLeadForm").submit(function(event) {
-                event.preventDefault();
-
-                var errorMessage = $("#errorMessage");
-                var error = $("#error");
-                error.hide();
-
-                $("#message").hide();
-
-                var companyName = $("#company").val();
-                var firstName = $("#first_name").val();
-                var lastName = $("#last_name").val();
-                var email = $("#email").val();
-                var phone = $("#phone").val();
-                var product = $("#00N5j00000ERtXt").val();
-
-                if (company.length == 0 ||  first_name.length == 0 || last_name.length == 0 || email.length == 0 || phone.length == 0 || 00N5j00000ERtXt.length == 0) {
-                    errorMessage.text("All of the fields are required.");
-                    error.show();
-                }       
-            });
-        });
-    </script>
-    </head>
+  </head>
   <body>
     <div>
       <div>
@@ -76,27 +51,27 @@
                 <!--  ----------------------------------------------------------------------  -->
                 <div id="userdata" class="form-group">
                   <label for="company">Company</label>
-                  <input type="text" class="form-control" id="company" maxlength="40" name="company" size="20" type="text" />
+                  <input type="text" class="form-control" id="company" minlength="1" maxlength="40" name="company" size="20" type="text" />
                 </div>
                 <div id="userdata" class="form-group">
                   <label for="first_name">First Name</label>
-                  <input type="text" class="form-control" id="first_name" maxlength="40" name="first_name" size="20" type="text" />
+                  <input type="text" class="form-control" id="first_name" minlength="1" maxlength="40" name="first_name" size="20" type="text" />
                 </div>
                 <div id="userdata" class="form-group">
                   <label for="last_name">Last Name</label>
-                  <input type="text" class="form-control" id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+                  <input type="text" class="form-control" id="last_name" minlength="1" maxlength="80" name="last_name" size="20" type="text" />
                 </div>
                 <div id="userdata" class="form-group">
                   <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" maxlength="80" name="email" size="20" type="text" />
+                  <input type="email" class="form-control" id="email" minlength="5" maxlength="80" name="email" size="20" type="text" />
                 </div>
                 <div id="userdata" class="form-group">
                   <label for="phone">Phone</label>
-                  <input type="tel" class="form-control" id="phone" maxlength="40" name="phone" size="20" type="text" />
+                  <input type="tel" class="form-control" id="phone" minlength="1" maxlength="40" name="phone" size="20" type="text" />
                 </div>
                 <div id="userdata" class="form-group">
                   <label for="Product_c">Product</label>
-                  <input type="text" class="form-control" id="00N5j00000ERtXt" maxlength="255" name="00N5j00000ERtXt" size="20" type="text" />
+                  <input type="text" class="form-control" id="00N5j00000ERtXt" minlength="1" maxlength="255" name="00N5j00000ERtXt" size="20" type="text" />
                 </div>
               </div>  
               <div class="panel-footer">
