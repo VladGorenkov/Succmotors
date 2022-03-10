@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Heroku!</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/SLDS0121/assets/styles/salesforce-lightning-design-system.css">
+    <!-- Salesforce Web to Lead用 -->
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+      <script src="https://www.google.com/recaptcha/api.js"></script>
+      <script>
+       function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+      </script>
+    </head>
+  <body>
+    <div class="slds">
+      <div class="slds-grid slds-wrap">
+        <!-- page header -->
+        <nav class="slds-col slds-size--1-of-1">
+          <div class="slds-page-header" role="banner">
+            <div class="slds-media__body slds-p-top--x-small">
+              <h1 class="slds-text-heading--large">Heroku Demo App</h1>
+            </div>
+          </div>
+        </nav>
+        <!-- Main -->
+        <main class="slds-col slds-size--1-of-1">
+          <!-- Message Box -->
+          <div class="slds-box slds-m-around--small">
+            <p>Heroku &amp; Salesforce Web to Lead Sample.</p>
+          </div>
+          <!-- Web2ReadForm Box -->
+          <div class="slds-box slds-m-around--small">
+            
+              <!--  ----------------------------------------------------------------------  -->
+              <!--  NOTE: Please add the following <FORM> element to your page.             -->
+              <!--  ----------------------------------------------------------------------  -->
+
+              <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+                <input type=hidden name='captcha_settings' value='{"keyname":"Succmotors","fallback":"true","orgId":"00D5j000007Mq7v","ts":""}'>
+                <input type=hidden name="oid" value="00D5j000007Mq7v">
+                <input type=hidden name="retURL" value="https://succmotors.herokuapp.com/">
+                
+                <!--  ----------------------------------------------------------------------  -->
+                <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+                <!--  these lines if you wish to test in debug mode.                          -->
+                <!--  <input type="hidden" name="debug" value=1>                              -->
+                <!--  <input type="hidden" name="debugEmail" value="holymind73@gmail.com">    -->
+                <!--  ----------------------------------------------------------------------  -->
+                
+                <label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+                
+                <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+                
+                <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+                
+                <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+                
+                <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+                
+                Product:<input  id="00N5j00000ERtXt" maxlength="255" name="00N5j00000ERtXt" size="20" type="text" /><br>
+                
+                <div class="g-recaptcha" data-sitekey="6LcYT8MeAAAAAHSDGYubr76g9IMj8SMdPkGDe9cL"></div><br>
+                <input type="submit" name="submit">
+                
+                </form>
+                
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
