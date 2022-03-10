@@ -4,11 +4,11 @@
     <title>Heroku!</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
         <!-- Salesforce Web to Lead用 -->
-    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-      <script src="https://www.google.com/recaptcha/api.js"></script>
-      <script>
-       function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-      </script>
+        <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+          <script src="https://www.google.com/recaptcha/api.js"></script>
+          <script>
+           function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+          </script>
     </head>
   <body>
     <div>
@@ -36,10 +36,9 @@
 
               <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
-                <input type=hidden name='captcha_settings' value='{"keyname":"Succmotors","fallback":"true","orgId":"00D5j000007Mq7v","ts":""}'>
+                <input type=hidden name='captcha_settings' value='{"keyname":"Successmotors","fallback":"true","orgId":"00D5j000007Mq7v","ts":""}'>
                 <input type=hidden name="oid" value="00D5j000007Mq7v">
                 <input type=hidden name="retURL" value="https://succmotors.herokuapp.com/">
-                <input type=hidden name="ProductTypeID" value="https://succmotors.herokuapp.com/">
                 
                 <!--  ----------------------------------------------------------------------  -->
                 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -60,10 +59,11 @@
                 
                 Product:<input  id="00N5j00000ERtXt" maxlength="255" name="00N5j00000ERtXt" size="20" type="text" /><br>
                 
-                <div class="g-recaptcha" data-sitekey="6LcYT8MeAAAAAHSDGYubr76g9IMj8SMdPkGDe9cL"></div><br>
+                <div class="g-recaptcha" data-sitekey="6LfAHMseAAAAAMdrkD84n_MX51Mmoz2pNtSmpuAK"></div><br>
                 <input type="submit" name="submit">
                 
                 </form>
+                
                 
           </div>
         </main>
