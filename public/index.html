@@ -17,8 +17,7 @@
         body {padding-top: 60px;}
       </style>
       <script>
-        $(function() {
-            $("#WebToLeadForm").submit(function(event) {
+        function CallValidation() {
                 event.preventDefault();
 
                 var errorMessage = $("#errorMessage");
@@ -39,7 +38,6 @@
                     error.show();
                 }
                 else {
-                    
                             $("#company").val("");
                             $("#first_name").val("");
                             $("#last_name").val("");
@@ -51,8 +49,7 @@
                         
                             error.hide();
                         }
-                    });
-                  });               
+                }                              
      </script>
     </head>
   <body>
@@ -115,7 +112,7 @@
               <div class="panel-footer">
                 
                 <div class="g-recaptcha" data-sitekey="6LfAHMseAAAAAMdrkD84n_MX51Mmoz2pNtSmpuAK"></div>
-                <button type="button" class="btn btn-primary">Submit</button>
+                <button  type="button" onclick="CallValidation()" class="btn btn-primary">Submit</button>
                 <div id="message" class="alert alert-info" role="alert" style="display: none;">
                   <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                   <span id="messageMessage"></span>
