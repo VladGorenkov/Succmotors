@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Heroku!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Succmotors web-to-lead</title>
          <!-- Salesforce Web to Lead用 -->
-        <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
-          <script src="https://www.google.com/recaptcha/api.js"></script>
-          <script>
-           function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-          </script>
+    <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+      <script src="https://www.google.com/recaptcha/api.js"></script>
+      <script>
+        function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+      </script>
+      link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <script src="//code.jquery.com/jquery-1.11.3.js"></script>
+      <style>
+        body {padding-top: 60px;}
+      </style>
     </head>
   <body>
     <div>
       <div>
         <!-- page header -->
-        <nav>
-          <div>
-            <div>
-              <h1>Heroku Demo App</h1>
-            </div>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container">
+              <div class="navbar-header">
+                  <a class="navbar-brand" href="/">Phone Number Changer</a>
+              </div>
           </div>
-        </nav>
-        <!-- Main -->
-        <main>
-          <!-- Message Box -->
-          <div>
-            <p>Heroku &amp; Salesforce Web to Lead Sample.</p>
-          </div>
-          <!-- Web2ReadForm Box -->
-          <div>
-            
+      </nav>
+       <div class="container">
               <!--  ----------------------------------------------------------------------  -->
               <!--  NOTE: Please add the following <FORM> element to your page.             -->
               <!--  ----------------------------------------------------------------------  -->
 
-              <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-
+              <form id="WebToLeadForm" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" style="width: 400px">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <h3 class="panel-title">Update your lead</h3>
+                </div>
                 <input type=hidden name='captcha_settings' value='{"keyname":"Successmotors","fallback":"true","orgId":"00D5j000007Mq7v","ts":""}'>
                 <input type=hidden name="oid" value="00D5j000007Mq7v">
                 <input type=hidden name="retURL" value="https://succmotors.herokuapp.com/">
@@ -61,12 +64,9 @@
                 <div class="g-recaptcha" data-sitekey="6LfAHMseAAAAAMdrkD84n_MX51Mmoz2pNtSmpuAK"></div><br>
                 <input type="submit" name="submit">
                 
-                </form>
-                
-                
+                </form>   
           </div>
-        </main>
-      </div>
+        </div>
     </div>
   </body>
 </html>
