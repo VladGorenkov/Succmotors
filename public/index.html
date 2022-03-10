@@ -17,7 +17,8 @@
         body {padding-top: 60px;}
       </style>
       <script>
-        function callValidation(){
+        $(function() {
+            $("#WebToLeadForm").submit(function(event) {
                 event.preventDefault();
 
                 var errorMessage = $("#errorMessage");
@@ -114,7 +115,7 @@
               <div class="panel-footer">
                 
                 <div class="g-recaptcha" data-sitekey="6LfAHMseAAAAAMdrkD84n_MX51Mmoz2pNtSmpuAK"></div>
-                <button class="btn btn-primary" onclick="return callValidation();">Submit</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
                 <div id="error" class="alert alert-danger" role="alert" style="display: none;">
                   <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
                   <span class="sr-only">Error:</span>
