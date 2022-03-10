@@ -111,16 +111,19 @@
             var product = $("#00N5j00000ERtXt").val();
 
             if (company.length == 0 ||  first_name.length == 0 || last_name.length == 0 || email.length == 0 || phone.length == 0 || product.length == 0) {
-                errorMessage.text("All of the fields are required.");
+                errorMessage.text("All of the fields are required!");
                 error.show();
             }
+            else if(grecaptcha.getResponse().length == 0)
+            {
+              errorMessage.text("Verify, that you are not a robot!");}
             else {
                         $("#company").val("");
                         $("#first_name").val("");
                         $("#last_name").val("");
                         $("#email").val("");
                         $("#phone").val("");
-                        $("#product").val("");
+                        $("#00N5j00000ERtXt").val("");
                         $("#messageMessage").text("Record updated!");
                         $("#message").show();
                     
