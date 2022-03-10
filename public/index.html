@@ -13,6 +13,17 @@
       </script>
       <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
       <script src="//code.jquery.com/jquery-1.11.3.js"></script>
+      <script>
+        $(function() {
+            var product = [];
+            $.getJSON('products.json', function(data) {
+            $.each(data.product, function(i, f) {
+            var row = "<option" + " " + "value=" + f.PRODUCTCODE + ">" + f.PRODUCTNAME + "</option>"
+            $(row).appendTo("#userdata datalist");
+            });
+        });
+    });
+    </script>
       <style>
         body {padding-top: 60px;}
       </style>
@@ -49,29 +60,32 @@
                 <!--  <input type="hidden" name="debug" value=1>                              -->
                 <!--  <input type="hidden" name="debugEmail" value="holymind73@gmail.com">    -->
                 <!--  ----------------------------------------------------------------------  -->
-                <div id="userdata" class="form-group">
+                <div class="form-group">
                   <label for="company">Company</label>
-                  <input type="text" class="form-control" id="company" minlength="1" maxlength="40" name="company" size="20" type="text" />
+                  <input type="text" class="form-control" id="company" maxlength="40" name="company" size="20"/>
                 </div>
-                <div id="userdata" class="form-group">
+                <div class="form-group">
                   <label for="first_name">First Name</label>
-                  <input type="text" class="form-control" id="first_name" minlength="1" maxlength="40" name="first_name" size="20" type="text" />
+                  <input type="text" class="form-control" id="first_name" maxlength="40" name="first_name" size="20"/>
                 </div>
-                <div id="userdata" class="form-group">
+                <div class="form-group">
                   <label for="last_name">Last Name</label>
-                  <input type="text" class="form-control" id="last_name" minlength="1" maxlength="80" name="last_name" size="20" type="text" />
+                  <input type="text" class="form-control" id="last_name" maxlength="80" name="last_name" size="20"/>
                 </div>
-                <div id="userdata" class="form-group">
+                <div class="form-group">
                   <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" minlength="5" maxlength="80" name="email" size="20" type="text" />
+                  <input type="email" class="form-control" id="email" maxlength="80" name="email" size="20"/>
                 </div>
-                <div id="userdata" class="form-group">
+                <div class="form-group">
                   <label for="phone">Phone</label>
-                  <input type="tel" class="form-control" id="phone" minlength="1" maxlength="40" name="phone" size="20" type="text" />
+                  <input type="tel" class="form-control" id="phone" maxlength="40" name="phone" size="20"/>
                 </div>
                 <div id="userdata" class="form-group">
                   <label for="Product_c">Product</label>
-                  <input type="text" class="form-control" id="00N5j00000ERtXt" minlength="1" maxlength="255" name="00N5j00000ERtXt" size="20" type="text" />
+                  <input list="products" type="text" class="form-control" id="00N5j00000ERtXt" maxlength="255" name="product" size="20"/>
+                  <datalist id="products">
+                        
+                  </datalist>
                 </div>
               </div>  
               <div class="panel-footer">
