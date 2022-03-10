@@ -1,0 +1,286 @@
+ {
+        "product": [
+            {
+                "ID": "01t5j000003yOWbAAM",
+                "PRODUCTNAME": "Renault Logan",
+                "PRODUCTCODE": "R001C1",
+                "DESCRIPTION": "Your reliability. Your Renault.",
+                "PRODUCTTYPE": "CAR",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOWcAAM",
+                "PRODUCTNAME": "Renault Logan Stepway",
+                "PRODUCTCODE": "R002C2",
+                "DESCRIPTION": "Your freedom. Your Renault. Increased clearence.",
+                "PRODUCTTYPE": "CAR",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOWdAAM",
+                "PRODUCTNAME": "Renault Sandero",
+                "PRODUCTCODE": "R003C3",
+                "DESCRIPTION": "Simplicity and spaciousness.",
+                "PRODUCTTYPE": "CAR",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOWeAAM",
+                "PRODUCTNAME": "Renault Sandero Stepway",
+                "PRODUCTCODE": "R004C4",
+                "DESCRIPTION": "The cheapest one crossover.",
+                "PRODUCTTYPE": "CAR",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOWfAAM",
+                "PRODUCTNAME": "K7M",
+                "PRODUCTCODE": "R005E1",
+                "DESCRIPTION": "\"Four-cylinder eight-valve gasoline engine with a displacement of 1.6L",
+                "PRODUCTTYPE": "timing belt drive and consumption of 7.1 L in a mixed cycle. Power: 82hp.\"",
+                "STATUS": "Part",
+                "undefined": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOWgAAM",
+                "PRODUCTNAME": "K4M",
+                "PRODUCTCODE": "R006E2",
+                "DESCRIPTION": "\"Four-cylinder sixteen-valve gasoline engine with a displacement of 1.6L",
+                "PRODUCTTYPE": "timing belt drive and consumption of 7.1 L in a mixed cycle. Power: 102hp.\"",
+                "STATUS": "Part",
+                "undefined": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOWhAAM",
+                "PRODUCTNAME": "H4M",
+                "PRODUCTCODE": "R007E3",
+                "DESCRIPTION": "\"Four-cylinder sixteen-valve gasoline engine with a displacement of 1.6L",
+                "PRODUCTTYPE": "timing chain drive and consumption of 6.7 L in a mixed cycle. Power: 113hp. It also installs on Lada.\"",
+                "STATUS": "Part",
+                "undefined": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOWiAAM",
+                "PRODUCTNAME": "Kia Rio",
+                "PRODUCTCODE": "HK001C1",
+                "DESCRIPTION": "Impressive from every angle.",
+                "PRODUCTTYPE": "CAR",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOWjAAM",
+                "PRODUCTNAME": "Kia Rio X-Line",
+                "PRODUCTCODE": "HK002C2",
+                "DESCRIPTION": "The energy of fulfilling desires.",
+                "PRODUCTTYPE": "CAR",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOWkAAM",
+                "PRODUCTNAME": "Hyundai Accent",
+                "PRODUCTCODE": "HK003C3",
+                "DESCRIPTION": "Beauty surrounds you.",
+                "PRODUCTTYPE": "CAR",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOWlAAM",
+                "PRODUCTNAME": "Hyundai Solaris",
+                "PRODUCTCODE": "HK004C4",
+                "DESCRIPTION": "Safety is at the first place.",
+                "PRODUCTTYPE": "CAR",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOWmAAM",
+                "PRODUCTNAME": "G4LC",
+                "PRODUCTCODE": "HK005E1",
+                "DESCRIPTION": "\"A typical gasoline engine equipped with multipoint fuel injection with an aluminum block",
+                "PRODUCTTYPE": "cast iron liners",
+                "STATUS": "a 16-valve head with hydraulic lifters",
+                "undefined": [
+                    "a timing chain drive and Dual CVVT phase regulators on the intake and exhaust camshafts. There is also a plastic intake manifold with a VIS geometry change system. Power: 100hp",
+                    "consumption of 5.7 L in the combined cycle.\"",
+                    "Part",
+                    "Item Created"
+                ]
+            },
+            {
+                "ID": "01t5j000003yOWnAAM",
+                "PRODUCTNAME": "G4FG",
+                "PRODUCTCODE": "HK006E2",
+                "DESCRIPTION": "\"A typical gasoline engine equipped with multipoint fuel injection with an aluminum block with an open cooling jacket",
+                "PRODUCTTYPE": "an aluminum 16-valve DOHC block head without hydraulic compensators",
+                "STATUS": "a timing chain drive",
+                "undefined": [
+                    "an intake phase regulator",
+                    "a plastic intake manifold without a geometry change system. Like their predecessors",
+                    "the first motors in the series were equipped with distributed fuel injection. Power: 123hp",
+                    "consumption of 6.1 L in the combined cycle.\"",
+                    "Part",
+                    "Item Created"
+                ]
+            },
+            {
+                "ID": "01t5j000003yOWoAAM",
+                "PRODUCTNAME": "Volkswagen Polo Sedan",
+                "PRODUCTCODE": "VAG001C1",
+                "DESCRIPTION": "You want it so.",
+                "PRODUCTTYPE": "CAR",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOWpAAM",
+                "PRODUCTNAME": "Volkswagen Polo 2021",
+                "PRODUCTCODE": "VAG002C2",
+                "DESCRIPTION": "Attention to every detail Attention to every detail Now  liftback.",
+                "PRODUCTTYPE": "CAR",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOWqAAM",
+                "PRODUCTNAME": "Skoda Rapid",
+                "PRODUCTCODE": "VAG003C3",
+                "DESCRIPTION": "We agree on one thing.",
+                "PRODUCTTYPE": "CAR",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOWrAAM",
+                "PRODUCTNAME": "CZCA",
+                "PRODUCTCODE": "VAG004E1",
+                "DESCRIPTION": "Gasoline engine with a volume of 1.4 liters and a capacity of 125 hp. turbocharged.",
+                "PRODUCTTYPE": "Part",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOWsAAM",
+                "PRODUCTNAME": "CFW",
+                "PRODUCTCODE": "VAG005E2",
+                "DESCRIPTION": "The engine that had a working volume of 1.6 liters. This allowed him to develop a maximum power of up to 90 horsepower.",
+                "PRODUCTTYPE": "Part",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOWtAAM",
+                "PRODUCTNAME": "CWVA",
+                "PRODUCTCODE": "VAG006E3",
+                "DESCRIPTION": "\"It differs from the CFNA with a 180 ° cylinder head (intake in front) with a built-in exhaust manifold at the rear",
+                "PRODUCTTYPE": "the presence of a phase shifter on the intake shaft",
+                "STATUS": "a modified cooling system and compliance with Euro-5 environmental standards.\"",
+                "undefined": [
+                    "Part",
+                    "Item Created"
+                ]
+            },
+            {
+                "ID": "01t5j000003yOWuAAM",
+                "PRODUCTNAME": "CFNA",
+                "PRODUCTCODE": "VAG007E4",
+                "DESCRIPTION": "The 1.6 MPI gasoline engine of the E111 family with the factory designation CFNA has a displacement of 1.6 liters and develops a power of 105 hp.",
+                "PRODUCTTYPE": "Part",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOWvAAM",
+                "PRODUCTNAME": "CFNB",
+                "PRODUCTCODE": "VAG008E5",
+                "DESCRIPTION": "CFNA  derated to 85 hp version.",
+                "PRODUCTTYPE": "Part",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOWwAAM",
+                "PRODUCTNAME": "Lada Vesta",
+                "PRODUCTCODE": "L001C1",
+                "DESCRIPTION": "Roomy and comfortable.",
+                "PRODUCTTYPE": "CAR",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOWxAAM",
+                "PRODUCTNAME": "Lada Xray",
+                "PRODUCTCODE": "L002C2",
+                "DESCRIPTION": "\"Be taller",
+                "PRODUCTTYPE": "be brighter",
+                "STATUS": "be more visible",
+                "undefined": [
+                    "be free.\"",
+                    "CAR",
+                    "Item Created"
+                ]
+            },
+            {
+                "ID": "01t5j000003yOWyAAM",
+                "PRODUCTNAME": "VAZ-21179",
+                "PRODUCTCODE": "L003E1",
+                "DESCRIPTION": "First 16-valve engine with a volume of 1.8liters and a capacity of 122 horsepower.",
+                "PRODUCTTYPE": "Part",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOWzAAM",
+                "PRODUCTNAME": "VAZ-21129",
+                "PRODUCTCODE": "L004E2",
+                "DESCRIPTION": "16-valve engine with a volume of 1.6 liters and a capacity of 106 horsepower.",
+                "PRODUCTTYPE": "Part",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOX0AAM",
+                "PRODUCTNAME": "Carpets Renault",
+                "PRODUCTCODE": "R008A1",
+                "DESCRIPTION": "Set of carpets (4 items) for your Renault.",
+                "PRODUCTTYPE": "Accessory",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOX1AAM",
+                "PRODUCTNAME": "Carpets Hyundai",
+                "PRODUCTCODE": "HK007A1",
+                "DESCRIPTION": "Set of carpets (4 items) for your Hyundai.",
+                "PRODUCTTYPE": "Accessory",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOX2AAM",
+                "PRODUCTNAME": "Carpets Kia",
+                "PRODUCTCODE": "HK008A2",
+                "DESCRIPTION": "Set of carpets (4 items) for your Kia.",
+                "PRODUCTTYPE": "Accessory",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOX3AAM",
+                "PRODUCTNAME": "Carpets Volkswagen",
+                "PRODUCTCODE": "VAG009A1",
+                "DESCRIPTION": "Set of carpets (4 items) for your Volkswagen.",
+                "PRODUCTTYPE": "Accessory",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOX4AAM",
+                "PRODUCTNAME": "Carpets Skoda",
+                "PRODUCTCODE": "VAG010A2",
+                "DESCRIPTION": "Set of carpets (4 items) for your Skoda.",
+                "PRODUCTTYPE": "Accessory",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOX5AAM",
+                "PRODUCTNAME": "Carpets Lada",
+                "PRODUCTCODE": "L005A1",
+                "DESCRIPTION": "Set of carpets (4 items) for your Lada.",
+                "PRODUCTTYPE": "Accessory",
+                "STATUS": "Item Created"
+            },
+            {
+                "ID": "01t5j000003yOX6AAM",
+                "PRODUCTNAME": "Phone holder Xiaomi",
+                "PRODUCTCODE": "MI001A1",
+                "DESCRIPTION": "Xiaomi takes care of you and considers it necessary to minimize accidents on the road with your participation.",
+                "PRODUCTTYPE": "Accessory",
+                "STATUS": "Item Created"
+            }
+        ]
+    }
