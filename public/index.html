@@ -15,8 +15,6 @@
       <script src="//code.jquery.com/jquery-1.11.3.js"></script>
       <style>
         body {padding-top: 60px;}
-        button {display: none;
-          background: transparent;}
       </style>
       </head>
   <body>
@@ -79,8 +77,10 @@
               <div class="panel-footer">
                 
                 <div class="g-recaptcha" data-sitekey="6LfAHMseAAAAAMdrkD84n_MX51Mmoz2pNtSmpuAK"></div>
-                <button  type="button" class="btn btn-primary" class = "hide">Submit</button>
-                <button  type="submit" class="btn btn-primary" class = "hide">Submit</button>
+                <button  type="button" class="btn btn-primary" onclick="CallValidation()">Submit</button>
+                <div id="button" style="display: none;">
+                  <button  type="submit" class="submit">Submit</button>
+                </div>
                 <div id="message" class="alert alert-info" role="alert" style="display: none;">
                   <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                   <span id="messageMessage"></span>
@@ -132,7 +132,7 @@
                         $("#message").show();
                     
                         error.hide();
-                        //document.getElementById('WebToLeadForm').submit()
+                        document.querySelector('.submit').click()
                     }
             }                        
  </script>
