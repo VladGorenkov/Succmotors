@@ -124,23 +124,23 @@
             if (company.length == 0 ||  first_name.length == 0 || last_name.length == 0 || email.length == 0 || phone.length == 0 || product.length == 0) {
                 errorMessage.text("All of the fields are required!");
                 error.show();
-            }else{
-              if (!email.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
-               errorMessage.text("Check your email");
-                error.show();}
-                else { 
-                  if (grecaptcha.getResponse().length == 0)
-                   
-                  {errorMessage.text("Verify, that you are not a robot!");
-                    error.show();}
-                    else {
-                      $("#messageMessage").text("Ready!");
-                      $("#message").show();
-                  
-                      error.hide();
-                      $("#send").prop('disabled', false);
-                  }}
-            }                       
+            }
+            else if(!email.match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
+                errorMessage.text("Check your email");
+                error.show();
+            }
+            else if(grecaptcha.getResponse().length == 0)
+            {
+              errorMessage.text("Verify, that you are not a robot!");
+              error.show();}
+            else {
+                        $("#messageMessage").text("Ready!");
+                        $("#message").show();
+                    
+                        error.hide();
+                        $("#send").prop('disabled', false);
+                    }
+            }                        
  </script>
  <script>
   $(function() {
