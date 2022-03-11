@@ -80,7 +80,7 @@
               <div class="panel-footer">               
                 <div class="g-recaptcha" data-sitekey="6LfAHMseAAAAAMdrkD84n_MX51Mmoz2pNtSmpuAK"></div>
                 <button id="cancel" type="button" onclick="CallValidation()" class="btn btn-primary">Submit</button> 
-                <button id="send" type="submit" class="send" disabled >Submit</button> 
+                <button id="send" type="submit" class="btn btn-primary" disabled >Submit</button> 
                 <div id="message" class="alert alert-info" role="alert" style="display: none;">
                   <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                   <span id="messageMessage"></span>
@@ -134,7 +134,7 @@
                         $("#message").show();
                     
                         error.hide();
-                        $("send").prop('disabled', false);
+                        $("#send").prop('disabled', false);
                     }
             }                        
  </script>
