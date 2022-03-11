@@ -79,8 +79,8 @@
               </div>  
               <div class="panel-footer">               
                 <div class="g-recaptcha" data-sitekey="6LfAHMseAAAAAMdrkD84n_MX51Mmoz2pNtSmpuAK"></div>
-                <button  type="button" onclick="CallValidation()" class="btn btn-primary">Submit</button> 
-                <button  type="submit" class="submit" style="display: none;">Submit</button> 
+                <button id="cancel" type="button" onclick="CallValidation()" class="btn btn-primary">Submit</button> 
+                <button id="send" type="submit" class="submit" style="display: none;">Submit</button> 
                 <div id="message" class="alert alert-info" role="alert" style="display: none;">
                   <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                   <span id="messageMessage"></span>
@@ -99,7 +99,9 @@
   <script>
     function CallValidation() {
             event.preventDefault();
-
+            
+            var send = $("#send");
+            
             var errorMessage = $("#errorMessage");
             var error = $("#error");
             error.hide();
@@ -132,7 +134,7 @@
                         $("#message").show();
                     
                         error.hide();
-                        document.querySelector('.submit').click()
+                        send.show
                     }
             }                        
  </script>
