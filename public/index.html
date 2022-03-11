@@ -15,6 +15,9 @@
       <script src="//code.jquery.com/jquery-1.11.3.js"></script>
       <style>
         body {padding-top: 60px;}
+        .hide {
+          display: none;
+      }
       </style>
       </head>
   <body>
@@ -78,9 +81,7 @@
                 
                 <div class="g-recaptcha" data-sitekey="6LfAHMseAAAAAMdrkD84n_MX51Mmoz2pNtSmpuAK"></div>
                 <button  type="button" class="btn btn-primary" onclick="CallValidation()">Submit</button>
-                <div id="button" style="display: none;">
-                  <button  type="submit" class="submit">Submit</button>
-                </div>
+                <button  type="submit" class="submit" style="display: none;">Submit</button>
                 <div id="message" class="alert alert-info" role="alert" style="display: none;">
                   <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                   <span id="messageMessage"></span>
