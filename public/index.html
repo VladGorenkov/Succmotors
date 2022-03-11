@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Succmotors web-to-lead</title>
-         <!-- Salesforce Web to Lead用 -->
     <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
       <script src="https://www.google.com/recaptcha/api.js"></script>
       <script>
@@ -27,7 +26,7 @@
         <nav class="navbar navbar-inverse navbar-fixed-top">
           <div class="container">
               <div class="navbar-header">
-                  <a class="navbar-brand" href="/">Web-to-Lead</a>
+                  <a class="navbar-brand" href="/">Web-to-Lead form</a>
               </div>
           </div>
       </nav>
@@ -39,7 +38,7 @@
               <form id="WebToLeadForm" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" style="width: 400px">
                 <div class="panel panel-default">
                   <div class="panel-heading">
-                      <h3 class="panel-title">Update your lead</h3>
+                      <h3 class="panel-title">Insert your lead</h3>
                 </div>
               <div class="panel-body">
                 <input type=hidden name='captcha_settings' value='{"keyname":"Successmotors","fallback":"true","orgId":"00D5j000007Mq7v","ts":""}'>
@@ -83,7 +82,7 @@
               <div class="panel-footer">               
                 <div class="g-recaptcha" data-sitekey="6LfAHMseAAAAAMdrkD84n_MX51Mmoz2pNtSmpuAK"></div>
                 <button id="cancel" type="button" onclick="CallValidation()" class="btn btn-primary">Verify</button> 
-                <button id="send" type="submit" class="btn btn-primary" disabled >Send!</button> 
+                <button id="send" type="submit" class="btn btn-success" disabled >Send!</button> 
                 <div id="message" class="alert alert-info" role="alert" style="display: none;">
                   <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                   <span id="messageMessage"></span>
