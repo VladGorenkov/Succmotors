@@ -97,6 +97,10 @@
     </div>
   </body>
   <script>
+    var form = document.querySelector('#WebToLeadForm');
+    form.addEventListener('change', function() {
+      $("#send").prop('disabled', true);
+    });
     function CallValidation() {
             event.preventDefault();
             
