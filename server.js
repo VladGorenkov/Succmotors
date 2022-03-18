@@ -4,9 +4,7 @@ var port = process.env.PORT || 8080;
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/thanks', function (req, res) {
-  res.send('Thank you!');
-});
+
 
 console.log('Served: http://localhost:' + port);
 app.listen(port);
